@@ -19,6 +19,8 @@ namespace StudioExam.Areas.Admin.Controllers
                 Name = positions.Name,
                 
 
+
+
             }).ToListAsync();
             return View(positions);
         }
@@ -46,6 +48,8 @@ namespace StudioExam.Areas.Admin.Controllers
               
 
             };
+
+
 
             await _context.Positions.AddAsync(position);
             _context.SaveChanges();
